@@ -18,7 +18,7 @@ export default function RootLayout({
       <html lang="en">
         <body className="bg-slate-100">
           <Navbar />
-          {children}
+          <div className="px-8 md:px-10 lg:px-10 xl:px-35 py-6">{children}</div>
         </body>
       </html>
     </ClerkProvider>
