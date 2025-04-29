@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -25,14 +27,14 @@ const Navbar = () => {
           >
             x
           </button>
-          <div className="flex flex-col md:flex-row gap-10">
-            <a href="">
+          <div className="flex flex-col md:flex-row gap-14">
+            <Link href="">
               <div className="flex gap-2 items-center">
                 <Image src={"/home.png"} width={25} height={25} alt="Home" />
                 <p>Homepage</p>
               </div>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <div className="flex gap-2 items-center">
                 <Image
                   src={"/friends.png"}
@@ -42,8 +44,8 @@ const Navbar = () => {
                 />
                 <p>Friends</p>
               </div>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <div className="flex gap-2 items-center">
                 <Image
                   src={"/stories.png"}
@@ -53,22 +55,30 @@ const Navbar = () => {
                 />
                 <p>Stories</p>
               </div>
-            </a>
+            </Link>
           </div>
-          <a href="">
-            <div className="flex gap-2 items-center">
-              <Image
-                src={
-                  "https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww"
-                }
-                width={30}
-                height={30}
-                className="rounded-full h-8 w-8 object-cover"
-                alt="Profile"
-              />
-              <p>Profile</p>
+          <div className="flex gap-10 items-center">
+            <div className="flex gap-5">
+              <div className="w-6 h-6 relative">
+                <Image src={"/people.png"} fill alt=""></Image>
+              </div>
+              <div className="w-6 h-6 relative">
+                <Image src={"/messages.png"} fill alt=""></Image>
+              </div>
+              <div className="w-6 h-6 relative">
+                <Image src={"/notifications.png"} fill alt=""></Image>
+              </div>
             </div>
-          </a>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <div className="flex gap-2 items-center">
+                <UserButton />
+                <p>Profile</p>
+              </div>
+            </SignedIn>
+          </div>
         </nav>
       </div>
     </header>
