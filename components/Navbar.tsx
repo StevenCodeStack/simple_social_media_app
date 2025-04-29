@@ -30,13 +30,13 @@ const Navbar = () => {
 
           {/* Links */}
           <div className="flex flex-col md:flex-row gap-10">
-            <Link href="" className="md:text-xs">
+            <Link href="" className="md:text-xs lg:text-sm">
               <div className="flex gap-2 items-center">
                 <Image src={"/home.png"} width={25} height={25} alt="Home" />
                 <p>Homepage</p>
               </div>
             </Link>
-            <Link href="" className="md:text-xs">
+            <Link href="" className="md:text-xs lg:text-sm">
               <div className="flex gap-2 items-center">
                 <Image
                   src={"/friends.png"}
@@ -47,7 +47,7 @@ const Navbar = () => {
                 <p>Friends</p>
               </div>
             </Link>
-            <Link href="" className="md:text-xs">
+            <Link href="" className="md:text-xs lg:text-sm">
               <div className="flex gap-2 items-center">
                 <Image
                   src={"/stories.png"}
