@@ -19,7 +19,7 @@ const Navbar = () => {
         <nav
           className={`${
             open ? `right-0` : `right-[-100%]`
-          } transition-all justify-end items-center md:justify-between flex flex-col-reverse md:flex-row md:static md:py-0 md:px-0 gap-20 px-12 fixed h-screen bg-slate-50 md:bg-transparent md:h-fit w-[60vw] md:w-full top-0 right-0`}
+          } z-1 transition-all justify-end items-center md:justify-between flex flex-col-reverse md:flex-row md:static md:py-0 md:px-0 gap-20 px-12 fixed h-screen bg-slate-50 md:bg-transparent md:h-fit w-[60vw] md:w-full top-0 right-0`}
         >
           <button
             className="md:hidden absolute top-5 right-8 text-2xl text-blue-400"

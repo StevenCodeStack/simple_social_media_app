@@ -4,3 +4,7 @@ html,
 body {
   overflow-x: hidden;
 }
+
+.hideScrollBar {
+  scrollbar-width: none;
+}

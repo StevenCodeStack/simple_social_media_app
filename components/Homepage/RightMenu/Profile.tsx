@@ -13,7 +13,7 @@ const Profile = () => {
           fill
           alt="asd"
         ></Image>
-        <div className="w-16 h-16 absolute -bottom-5 right-1/2 translate-x-1/2">
+        <div className="w-12 h-12 absolute -bottom-5 right-1/2 translate-x-1/2">
           <Image
             src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww"
             fill
@@ -59,7 +59,7 @@ const Profile = () => {
         </div>
         <p className="text-xs text-slate-600">142 Followers</p>
       </div>
-      <button className="bg-blue-500 text-white font-semibold px-2 py-1 rounded w-fit mt-3">
+      <button className="bg-blue-500 hover:bg-blue-400 transition-all text-white font-semibold px-2 py-1 rounded w-fit mt-3">
         My Profile
       </button>
     </div>

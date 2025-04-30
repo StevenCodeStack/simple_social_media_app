@@ -15,13 +15,16 @@ const Links = () => {
     { title: "Settings", picture: "/settings.png" },
   ];
   return (
-    <div className="mt-5 flex flex-col gap-6 bg-white rounded-2xl p-3">
+    <div className="mt-5 flex flex-col gap-3 bg-white rounded-2xl p-2">
       {linksData.map((item) => (
-        <div className="flex gap-3 items-center" key={item.picture}>
+        <div
+          className="flex gap-3 items-center px-2 py-1 rounded group hover:bg-slate-200 transition-all"
+          key={item.picture}
+        >
           <div className="w-5 h-5 relative">
             <Image src={item.picture} fill alt="" />
           </div>
-          <p>{item.title}</p>
+          <p className="text-slate-500 group-hover:text-black">{item.title}</p>
         </div>
       ))}
     </div>
