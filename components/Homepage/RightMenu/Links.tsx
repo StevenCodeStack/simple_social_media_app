@@ -15,7 +15,7 @@ const Links = () => {
     { title: "Settings", picture: "/settings.png" },
   ];
   return (
-    <div className="mt-5 flex flex-col gap-3 bg-white rounded-2xl p-2">
+    <div className="mt-4 flex flex-col gap-3 bg-white rounded-2xl p-2">
       {linksData.map((item) => (
         <div
           className="flex gap-3 items-center px-2 py-1 rounded group hover:bg-slate-200 transition-all"
