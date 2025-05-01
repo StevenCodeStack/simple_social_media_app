@@ -16,7 +16,7 @@ const AddPost = () => {
       </div>
       <div className="flex-grow px-3">
         <textarea
-          className="rounded bg-slate-100 w-full px-2"
+          className="rounded bg-slate-100 w-full px-2 py-1 resize-none"
           placeholder="Tell your days!"
           name="Post"
           id=""

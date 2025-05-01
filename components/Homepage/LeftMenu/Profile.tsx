@@ -23,7 +23,7 @@ const Profile = () => {
         </div>
       </div>
 
-      <h1 className="text-center mt-6 font-bold text-lg">Tim Banners</h1>
+      <h1 className="text-center mt-6 font-bold">Tim Banners</h1>
       <div className="flex justify-center items-center gap-2">
         <div className="flex">
           <div className="w-5 h-5 relative">
@@ -57,7 +57,7 @@ const Profile = () => {
             />
           </div>
         </div>
-        <p className="text-xs text-slate-600">142 Followers</p>
+        <p className="text-xs font-semibold text-slate-600">142 Followers</p>
       </div>
       <button className="bg-blue-500 hover:bg-blue-400 transition-all text-white font-semibold px-2 py-1 rounded w-fit mt-3">
         My Profile
